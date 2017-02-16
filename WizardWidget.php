@@ -121,6 +121,7 @@ class WizardWidget extends Widget {
 			} else {
 				// On all previous steps show next button
 				$buttons[] = $this->navButton('next', $step, $button_id);
+				$buttons[] = $this->navbutton('next', $step, $button_id);
 			}
 			// Add buttons to tab content
 			$tab_content .= Html::ul($buttons, ['class' => 'list-inline pull-right', 'encode' => false]);
